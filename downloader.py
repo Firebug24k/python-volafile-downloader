@@ -121,9 +121,9 @@ class VolaDL(object):
         file_name = time_now.strftime("[%Y-%m-%d]") + "[" + self.room + "].txt"
         path = str(temp_path) + str(file_name)
         if not os.path.isfile(path):
-            fl = open(path, "w+")
+            fl = open(path, "w+", encoding='utf-8')
         else:
-            fl = open(path, "a")
+            fl = open(path, "a", encoding='utf-8')
 
         log_msg = '[{}][{}][{}][{}]\n'.format(str(time_now.strftime("%Y-%m-%d--%H:%M:%S")), prefix, msg.nick, str(msg))
         print("### Writing to log: " + log_msg[0:-1])
