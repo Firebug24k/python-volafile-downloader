@@ -11,7 +11,7 @@ DOWNLOAD_ALL_ON_ROOM_ENTER = True
 
 # After entering the room downloader remains running and downloads new files when they get uploaded
 # Needed for logging as well -> True/False
-CONTINUE_RUNNING = False
+CONTINUE_RUNNING = True
 
 # When this is True files from the same user with the same filename get downloaded with an altered
 # filename -> True/False
