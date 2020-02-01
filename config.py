@@ -11,12 +11,12 @@ DOWNLOAD_ALL_ON_ROOM_ENTER = True
 
 # After entering the room downloader remains running and downloads new files when they get uploaded
 # Needed for logging as well -> True/False
-CONTINUE_RUNNING = True
+CONTINUE_RUNNING = False
 
 # When this is True files from the same user with the same filename get downloaded with an altered
 # filename -> True/False
 # Does not apply to the room entering downloads, there no duplicates will be stored
-ALLOW_DUPLICATES = True
+ALLOW_DUPLICATES = False
 
 # Volafile user for downloading. Useful if you have volafile pro for a higher speed.
 VOLAFILE_USER = ''
