@@ -134,8 +134,8 @@ class VolaDL(object):
     def download_room(self):
         """Download the whole room on enter"""
         time.sleep(2)
-        ile_list = self.listen.files
-        file_list = deepcopy(ile_list)
+        file_list = self.listen.files
+        #file_list = deepcopy(ile_list)
         for f in file_list:
             url = f.url
             uploader = f.uploader
@@ -145,9 +145,10 @@ class VolaDL(object):
             if not self.max_file_size == -1 and f.size / 1048576 >= self.max_file_size:
                 print('File is too big to download.')
             elif self.file_check(f):
-                self.single_file_download(url, uploader)
+            #    self.single_file_download(url, uploader)
+           
             else:
-                print('File got filtered out.')
+           #     print('File got filtered out.')
         print('### ### ###')
         print('Downloading the room has been finished, leave this running to download new files/log or quit.')
         print('### ### ###')
