@@ -133,7 +133,8 @@ class VolaDL(object):
     def download_room(self):
         """Download the whole room on enter"""
         time.sleep(2)
-        file_list = self.listen.files
+        ile_list = self.listen.files
+        file_list = ile_list.copy()
         for f in file_list:
             url = f.url
             uploader = f.uploader
