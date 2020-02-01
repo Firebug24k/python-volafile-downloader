@@ -136,7 +136,7 @@ class VolaDL(object):
         time.sleep(2)
         file_list = self.listen.files
         #file_list = deepcopy(ile_list)
-        for f in list(file_list.keys()):
+        for f in list(file_list):
             url = f.url
             uploader = f.uploader
             file_size = '{0:.4f}'.format(f.size / 1048576)
