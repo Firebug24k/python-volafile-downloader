@@ -8,6 +8,7 @@ import random
 import config
 from datetime import datetime, timedelta
 import time
+from copy import deepcopy
 
 kill = False
 
@@ -134,7 +135,7 @@ class VolaDL(object):
         """Download the whole room on enter"""
         time.sleep(2)
         ile_list = self.listen.files
-        file_list = ile_list.copy()
+        file_list = deepcopy(ile_list)
         for f in file_list:
             url = f.url
             uploader = f.uploader
