@@ -144,10 +144,10 @@ class VolaDL(object):
             print('URL : {} - UPLOADER: {} - FILESIZE: {} MB'.format(url, uploader, file_size))
             if not self.max_file_size == -1 and f.size / 1048576 >= self.max_file_size:
                 print('File is too big to download.')
-            elif self.file_check(f):
+            #elif self.file_check(f):
                 #self.single_file_download(url, uploader)
            
-            else:
+            #else:
                 #print('File got filtered out.')
         print('### ### ###')
         print('Downloading the room has been finished, leave this running to download new files/log or quit.')
