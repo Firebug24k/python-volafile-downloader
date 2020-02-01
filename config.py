@@ -23,7 +23,7 @@ VOLAFILE_USER = ''
 VOLAFILE_USER_PASSWORD = ''
 
 # Maximum allowed size to download in MB -> unlimited if -1
-MAXIMUM_FILE_SIZE = -1
+MAXIMUM_FILE_SIZE = 5
 
 # Does the chat logger start -> True/False (can be overwritten in start command)
 LOGGER = True
