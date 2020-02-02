@@ -384,7 +384,10 @@ def main():
     lister = [args.room, args.passwd, downloader, logger]
     while not kill:
         v = VolaDL(lister)
-        v.dl()
+        try:
+            v.dl()
+        except Exception:
+            pass
 
 
 def main_callable(room, passwd='*', downloader=None, logger=None):
